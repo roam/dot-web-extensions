@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Remove Mediahuis GDPR BS",
+  "version": "1.1",
+  "content_scripts": [
+    {
+      "matches": ["*://*.nieuwsblad.be/*", "*://*.hbvl.be/*", "*://*.standaard.be/*"],
+      "js": ["remove-mediahuis-gdpr-bs.js"]
+    }
+  ]
+
+}
