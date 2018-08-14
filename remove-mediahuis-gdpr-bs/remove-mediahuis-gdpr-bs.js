@@ -32,7 +32,7 @@ function removeNotice() {
 
 function removeHtmlClass() {
     let removed = false;
-    ['is-gdpr-dialog-active', 'is-gdpr-notification-active'].forEach((c) => {
+    ['is-gdpr-dialog-active', 'is-gdpr-notification-active', 'is-dialog-active'].forEach((c) => {
         const html = document.documentElement;
         if (html.classList.contains(c)) {
             html.classList.remove(c);
